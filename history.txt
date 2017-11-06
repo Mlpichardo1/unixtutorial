@@ -1,0 +1,388 @@
+    1  mkdir htmlLesson
+    2  cd htmlLesson/
+    3  touch index.html
+    4  c9 index.html 
+    5  touch style.css
+    6  c9 style.css 
+    7  ls
+    8  git status
+    9  ls
+   10  init git
+   11  git init
+   12  git status
+   13  git add index.html 
+   14  git status
+   15  git add .
+   16  git status
+   17  git commit
+   18  git commit -m "Initial Commit"
+   19  git status
+   20  git checkout index.html
+   21  git stauts
+   22  git status
+   23  git checkout index.html
+   24  git status
+   25  mkdir scripts
+   26  cd scripts
+   27  touch scripts.js
+   28  c9 scripts.js
+   29  git status
+   30  git add -A
+   31  git status
+   32  git commit -m "modify index and add scripts.js"
+   33  git remote add origin git@github.com:Mlpichardo1/cdevening-gitlesson.git
+   34  git push -u origin master
+   35  cd ~
+   36  cd workspace
+   37  ls
+   38  unzip git_tutorial.zip 
+   39  ls
+   40  cd git_tutorial/
+   41  ls
+   42  history>history.txt
+   43  history > history.txt
+   44  history
+   45  touch sytle.scss
+   46  touch style.scss
+   47  c9 style.scss 
+   48  ls
+   49  cd hello/
+   50  ls\
+   51  ls
+   52  git st
+   53  git co
+   54  st
+   55  go
+   56  st
+   57  go <branch>
+   58  [alias]
+   59  co
+   60  ci
+   61  git co
+   62  git hist
+   63  git config --global alias.co checkout
+   64  co
+   65  git co
+   66  git config --global alias.ci commit
+   67  git config --global alias.st status
+   68  git config --global alias.br branch
+   69  git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+   70  git config --global alias.type 'cat-file -t'
+   71  git config --global alias.dump 'cat-file -p'
+   72  git hisyt
+   73  git hist
+   74  git checkout <hash>
+   75  git checkout 
+   76  cat hello.rb 
+   77  ..
+   78  ls
+   79  unzip git_tutorial
+   80  cd js
+   81  ls
+   82  mkdir js
+   83  cd js
+   84  touch script.js
+   85  c9 script.js 
+   86  node script.js 
+   87  ..
+   88  ls
+   89  cd git_tutorial/
+   90  ls
+   91  cd work/
+   92  ls
+   93  ..
+   94  git checkout master
+   95  cd h
+   96  cd hello/
+   97  ls
+   98  cd hello.rb
+   99  git checkout master
+  100  cat hello.rb 
+  101  git tag v1
+  102  git checkout v1^
+  103  git checkout 1~1
+  104  git checkout v1~1
+  105  cat hello.rb 
+  106  git tag v1-beta
+  107  git checkout v1
+  108  git checkout v1-beta
+  109  git tag
+  110  git hist master --all
+  111  git checkout master
+  112  echo > # this is a bad comment
+  113  # this is a bad comment
+  114  git status
+  115  git checkout hello.rb
+  116  git status
+  117  cat hello.rb
+  118  git add hello.rb
+  119  git status
+  120  git reset HEAD hello.rb
+  121  git checkout hello.rb
+  122  git status
+  123  # This is an unwanted but committed change
+  124  name = ARGV.first || "World"
+  125  puts "Hello, #{name}!"git add hello.rb
+  126  git add hello.rb
+  127  git commit -m "Oops, we didn't want this commit"
+  128  git revert HEAD
+  129  git hist
+  130  Revert "Oops, we didn't want this commit"
+  131  git Revert "Oops, we didn't want this commit"
+  132  git revert "Oops, we didn't want this commit"
+  133  git hist
+  134  git tag oops
+  135  git reset --hard v1
+  136  git hist
+  137  git hist --all
+  138  git tag -d oops
+  139  git hist --all
+  140  git add hello.rb 
+  141  git commit -m "Add an author comment"
+  142  git add hello.rb
+  143  git commit --amend -m "Add an author/email comment"
+  144  git histy
+  145  git hist
+  146  mkdir lib
+  147  git mv hello.rb lib
+  148  git status
+  149  git commit -m "Moved hello.rb to lib"
+  150  gem install rake
+  151  git add Rakefile
+  152  git add rakefile
+  153  ls
+  154  touch Rakefile
+  155  c9 r
+  156  c9 Rakefile 
+  157  git add Rakefile
+  158  git commit -m "Added a Rakefile."
+  159  rake
+  160  ls -C .git
+  161  ls -C .git/objects
+  162  ls -C .git/objects/<dir>
+  163  ls -C .git/objects/
+  164  ls -C .git/objects/38/
+  165  cat .git/config
+  166  ls .git/refs
+  167  ls .git/refs/heads
+  168  ls .git/refs/tags
+  169  cat .git/refs/tags/v1
+  170  cat .git/HEAD
+  171  git hist --max-count=1
+  172  ls
+  173  cd htmldemo/
+  174  ls
+  175  cd htmlblank/
+  176  ls
+  177  ..
+  178  cd git_tutorial/
+  179  ls
+  180  cd hello/
+  181  ls
+  182  git hist --max-count=1
+  183  git hist
+  184  git commit -m "Created a Rakefile"
+  185  git hist
+  186  ls
+  187  cd lib
+  188  git hist
+  189  cd he
+  190  cd hello/
+  191  ..
+  192  git hist
+  193  git commit -m "created a Rakefile"
+  194  git commit Rakefile
+  195  ls
+  196  cat Rakefile 
+  197  git commit Rakefile 
+  198  git status
+  199  git commit Rakefile
+  200  git status Rakefile 
+  201  git add Rakefile 
+  202  git commit -m "Added a Rakefile"
+  203  git hist
+  204  git status
+  205  git commit -a
+  206  git add Rakefile
+  207  git commit -m "Added a Rakefile."
+  208  cd lib/
+  209  git commit -m "Added a Rakefile."
+  210  git add Rakefile
+  211  git commit -m "Added a Rakefile."
+  212  ls
+  213  ..
+  214  ls
+  215  git commit -m "Added a Rakefile."
+  216  git add --aa
+  217  git add --all
+  218  git add ./*
+  219  git cat-file -t <hash>
+  220  git hist --max-count=1
+  221  git cat-file -t <hash>
+  222  git cat-file -t 
+  223  git cat-file -p <treehash>
+  224  git cat-file -p 
+  225  git checkout -b greet
+  226  git status
+  227  cd lib/
+  228  touch greeter.rb
+  229  c9 greeter.rb 
+  230  git add lib/greeter.rb
+  231  git add greeter.rb 
+  232  git commit -m "Added greeter class"
+  233  commit
+  234  git commit
+  235  git commit -m "Added greeter class"
+  236  git add lib/greeter.rb
+  237  git */
+  238  git add --all
+  239  git add --force
+  240  git add Rakefile
+  241  ..
+  242  git add Rakefile 
+  243  git status
+  244  git add Rakefile 
+  245  git commit -m "Added a Rakefile"
+  246  git hist
+  247  git status
+  248  git push -u origin master
+  249  git push -u master
+  250  git push -u
+  251  git status
+  252  git add Rakefile 
+  253  git add -m "Added a Rakefile"
+  254  git status
+  255  git commit Rakefile 
+  256  git status
+  257  git add Rakefile 
+  258  f
+  259  ls
+  260  cd git_tutorial/
+  261  ls
+  262  git hell
+  263  cd hello/
+  264  ls
+  265  git status
+  266  git add Rakefile 
+  267  git commit -m "Added Rakefile'
+  268  git commit
+  269  ..
+  270  .
+  271  /
+  272  ls
+  273  cd firstName/
+  274  ls
+  275  ..
+  276  ls
+  277  cd unixstuff
+  278  ls
+  279  git intit
+  280  ls -a
+  281  cd .
+  282  cd ..
+  283  cd
+  284  pwd
+  285  cd workspace/
+  286  pwd
+  287  ls unix
+  288  ls unixstuff/
+  289  ls backups
+  290  cd unixstuff/
+  291  ls backups/
+  292  ls ~/unixstuff
+  293  ls ~
+  294  ls ~/..
+  295  cp /vol/ee/ee-info/Teaching/Unix/science.txt .
+  296  ls
+  297  cp /vol/ee/ee-info/Teaching/Unix/science.txt .
+  298  cp vol/ee/ee-info/Teaching/Unix/science.txt .
+  299  cp /vol/ee/ee-info/Teaching/Unix/science.txt .
+  300  cp vol/ee/ee-info/Teaching/Unix/science.txt .
+  301  ls
+  302  cp science.txt science.bak
+  303  mv science.bak backups/.
+  304  ls
+  305  ls backups/
+  306  cp science.txt tempfile.txt
+  307  ls
+  308  rm tempfile.txt 
+  309  ls
+  310  mkdir tempstuff
+  311  ls
+  312  rm tempstuff/
+  313  rmdir tempstuff/
+  314  l
+  315  cat science.txt
+  316  [A 
+  317  :
+  318  cd unixstuff/
+  319  grep -ivc science science.txt
+  320  wc -w science.txt
+  321  wc -l science.txt
+  322  cat
+  323  cat > list1
+  324  cat list1 
+  325  cat > list2
+  326  ls list2
+  327  cat list2
+  328  cat >> list1
+  329  cat list1
+  330  cat list1 list2 > biglist
+  331  cat biglist
+  332  sort
+  333  sort < biglist
+  334  sort < biglist > slist
+  335  who
+  336  who > names.txt
+  337  sort < names.txt
+  338  who | sort
+  339  who | wc -l
+  340  ls list*
+  341  ls *list
+  342  ls ?list
+  343  man wc
+  344  whatis wc
+  345  apropos keyword
+  346  apropos copy
+  347  ls -l
+  348  ls -lg
+  349  chmod go-rwx biglist
+  350  chmod a+rw biglist
+  351  ls -l
+  352  chmod a+rw science.txt 
+  353  chmod go-rw backups/
+  354  ls -l
+  355  ps
+  356  sleep 10
+  357  sleep 10 &
+  358  sleep 1000
+  359  kill %jobnumber
+  360  sleep 100 &
+  361  kill %4
+  362  kill %1
+  363  sleep 1000 &
+  364  ps
+  365  kill 4927
+  366  ps
+  367  quota -v
+  368  df .
+  369  du -s *
+  370  ls -l science.txt
+  371  gzip science.txt
+  372  gunzip science.txt.gz
+  373  zcat science.txt.gz
+  374  zcat science.txt.
+  375  ls
+  376  file *
+  377  diff list1 list2
+  378  find . -name "*.txt" -print
+  379  find . -size +1M -ls
+  380  history
+  381  !
+  382  find . -size +1M -ls
+  383  touch style.css
+  384  grep -ivc science science.txt
+  385  set history=100
+  386  hist
+  387  history
+  388  history > history.txt
